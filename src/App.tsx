@@ -6,10 +6,7 @@ function App() {
     <div className="App">
       React Card CSS Example
       <br />
-      <PhotoCard
-        frontImage="https://images.pokemontcg.io/swsh12pt5/160_hires.png"
-        backImage="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
-      />
+      <PhotoCard frontImage="https://images.pokemontcg.io/swsh12pt5/160_hires.png" />
     </div>
   );
 }
