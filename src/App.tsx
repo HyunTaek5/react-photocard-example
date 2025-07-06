@@ -1,27 +1,16 @@
+import PhotoCard from './components/PhotoCard';
 import './App.css';
-import Card from './components/Card.tsx';
-import { ActiveCardProvider } from './stores/activeCard/ActiveCardProvider.tsx';
-import { OrientationProvider } from './stores/Orientation.tsx';
 
 function App() {
   return (
-    <>
+    <div className="App">
       React Card CSS Example
-      <div>
-        <OrientationProvider>
-          <ActiveCardProvider>
-            <Card
-              id={'swsh12pt5-160'}
-              name={'Pikachu'}
-              number={'160'}
-              set={'swsh12pt5'}
-              types={'Lightning'}
-              img={'https://images.pokemontcg.io/swsh12pt5/160_hires.png'}
-            />
-          </ActiveCardProvider>
-        </OrientationProvider>
-      </div>
-    </>
+      <br />
+      <PhotoCard
+        frontImage="https://images.pokemontcg.io/swsh12pt5/160_hires.png"
+        backImage="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+      />
+    </div>
   );
 }
 
